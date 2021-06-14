@@ -1,0 +1,34 @@
+﻿@using Ecommerce.Models
+@model IEnumerable<ProductModel>
+
+
+<div class="row">
+
+    @foreach (var prod in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img class="card-img-top" src="/Upload/@prod.Image" alt="@prod.Name">
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="/Home/Details/@prod.Id"> @prod.Name</a>
+                    </h4>
+                    <p class="card-text pt-2 description">
+                        @prod.Description
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted product-price">
+                        <i class="fa fa-dollar" aria-hidden="true"></i>
+                        @prod.Price
+                    </small>
+                    <a href="/Home/Details/@prod.Id" class="btn btn-default btn-sm float-right">
+                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        Shop now
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

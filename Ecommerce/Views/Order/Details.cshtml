@@ -2,7 +2,7 @@
 @model Ecommerce.Models.OrderDetails
 @{
     ViewBag.Title = "Details";
-    Layout = "_/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 
@@ -53,7 +53,7 @@
 
                 <dt class="col-sm-3">Total</dt>
                 <dd class="col-sm-9">
-                    <i class="fa fa-try" aria-hidden="true"></i>
+                    <i class="fa fa-dollar" aria-hidden="true"></i>
                     @Model.Total
                 </dd>
 
@@ -61,7 +61,7 @@
                 <dd class="col-sm-9">@Model.OrderDate</dd>
 
 
-                <dt class="col-sm-3">Adres</dt>
+                <dt class="col-sm-3">Address</dt>
                 <dd class="col-sm-9">
                     @Model.Address
                     <hr />
@@ -98,7 +98,7 @@
                                         @item.Quantity
                                     </td>
                                     <td>
-                                        <i class="fa fa-try" aria-hidden="true"></i>
+                                        <i class="fa fa-dollar" aria-hidden="true"></i>
                                         @item.Price
                                     </td>
                                     <td>

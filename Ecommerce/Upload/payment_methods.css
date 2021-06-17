@@ -27,34 +27,21 @@
 	transition: all 0.5s;
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.bonus {
-	background-image: url("bonus.png");
+.paymentWrap .paymentBtnGroup .paymentMethod .method.visa {
+	background-image: url("visa.jpg");
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.world {
-	background-image: url("world.png");
-	}
-
-.paymentWrap .paymentBtnGroup .paymentMethod .method.axess {
-	background-image: url("axess.png");
+.paymentWrap .paymentBtnGroup .paymentMethod .method.mastercard {
+	background-image: url("mastercard.jpg");
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.finans {
-	background-image: url("finans.png");
+.paymentWrap .paymentBtnGroup .paymentMethod .method.interac {
+	background-image: url("interac.jpg");
 }
 
-.paymentWrap .paymentBtnGroup .paymentMethod .method.maximum {
-	background-image: url("maximum.png");
+.paymentWrap .paymentBtnGroup .paymentMethod .method.paypal {
+	background-image: url("paypal.jpg");
 }
-
-.paymentWrap .paymentBtnGroup .paymentMethod .method.paraf {
-	background-image: url("paraf.png");
-}
-
-.paymentWrap .paymentBtnGroup .paymentMethod .method.bankkart {
-	background-image: url("bankkart.png");
-}
-
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method:hover {
 	outline: none !important;
